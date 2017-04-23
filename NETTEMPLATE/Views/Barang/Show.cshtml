@@ -1,0 +1,48 @@
+﻿
+@* Ini Untuk load Model *@
+@model IEnumerable<NETTEMPLATE.Models.Barang>
+
+<p>
+    @Html.ActionLink("Create New", "Create", "Barang")
+</p>
+<table class="table" border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NAMABARANG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HARGABARANG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DESKRIPSI)
+        </th>
+        <th>
+            <b>ACTION</b>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NAMABARANG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HARGABARANG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DESKRIPSI)
+            </td>
+            <td>
+
+                @* HTML.ActionLink(Link text, Method, Controller , Parameter) *@
+                @* Untuk controller apabila tidak diisi maka default controller sebelumnya (BarangController) *@
+
+                @Html.ActionLink("Edit", "Edit", new {item.IDBARANG}) |
+                @Html.ActionLink("Details", "Details", new {item.IDBARANG}) |
+                @Html.ActionLink("Delete", "Delete", new {item.IDBARANG})
+            </td>
+        </tr>
+    }
+
+</table>  

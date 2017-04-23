@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CrudLinqBarang">
+  <DataContextMoniker Name="/CrudLinqBarangDataContext" />
+  <nestedChildShapes>
+    <classShape Id="84956bae-c9be-4ee5-a551-e0609e625e29" absoluteBounds="1.875, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CrudLinqBarangDataContext/BARANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a057b8fc-ab93-4b96-8aec-82d57bc4ee12" absoluteBounds="1.8900000000000001, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee8a6839-68c9-453a-a0a0-e564a0dd8f25" absoluteBounds="4.625, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/CrudLinqBarangDataContext/TRANSAKSI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efc8470a-2ea9-4e8b-b380-68aac008025a" absoluteBounds="4.6400000000000006, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="143a1e27-f1b6-4bb7-ba5c-7ebc6561bfa5" absoluteBounds="5.625, 3.625, 2, 1.193992513020834">
+      <DataClassMoniker Name="/CrudLinqBarangDataContext/COBA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fee50766-9e8d-4110-9230-cfe5f9df5fba" absoluteBounds="5.6400000000000006, 4.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="101a5146-1134-4c97-8a7d-1fd0859ed41a" absoluteBounds="1.125, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CrudLinqBarangDataContext/NOTA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="afcb22b7-f2d6-43d3-ad26-7125220331e6" absoluteBounds="1.1400000000000001, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.53125 : 4); (3.53125 : 2.45599609375); (4.625 : 2.45599609375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CrudLinqBarangDataContext/BARANG/BARANG_TRANSAKSI" />
+      <nodes>
+        <classShapeMoniker Id="84956bae-c9be-4ee5-a551-e0609e625e29" />
+        <classShapeMoniker Id="ee8a6839-68c9-453a-a0a0-e564a0dd8f25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 1.44314697265625); (4.625 : 1.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CrudLinqBarangDataContext/NOTA/NOTA_TRANSAKSI" />
+      <nodes>
+        <classShapeMoniker Id="101a5146-1134-4c97-8a7d-1fd0859ed41a" />
+        <classShapeMoniker Id="ee8a6839-68c9-453a-a0a0-e564a0dd8f25" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

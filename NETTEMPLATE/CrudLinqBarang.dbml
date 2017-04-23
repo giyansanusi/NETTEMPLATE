@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Reseller" Class="CrudLinqBarangDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sanusi;Initial Catalog=Reseller;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ResellerConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BARANG" Member="BARANGs">
+    <Type Name="BARANG">
+      <Column Name="IDBARANG" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NAMABARANG" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="HARGABARANG" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DESKRIPSI" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="BARANG_TRANSAKSI" Member="TRANSAKSIs" ThisKey="IDBARANG" OtherKey="IDBARANG" Type="TRANSAKSI" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TRANSAKSI" Member="TRANSAKSIs">
+    <Type Name="TRANSAKSI">
+      <Column Name="IDTRANSAKSI" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="JUMLAHBELI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HARGABELI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HARGAJUAL" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IDNOTA" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IDBARANG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="BARANG_TRANSAKSI" Member="BARANG" ThisKey="IDBARANG" OtherKey="IDBARANG" Type="BARANG" IsForeignKey="true" />
+      <Association Name="NOTA_TRANSAKSI" Member="NOTA" ThisKey="IDNOTA" OtherKey="IDNOTA" Type="NOTA" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.COBA" Member="COBAs">
+    <Type Name="COBA">
+      <Column Name="IDCOBA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TANGGAL" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NOTA" Member="NOTAs">
+    <Type Name="NOTA">
+      <Column Name="IDNOTA" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TANGGALBELI" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="KETERANGAN" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="NOTA_TRANSAKSI" Member="TRANSAKSIs" ThisKey="IDNOTA" OtherKey="IDNOTA" Type="TRANSAKSI" />
+    </Type>
+  </Table>
+</Database>

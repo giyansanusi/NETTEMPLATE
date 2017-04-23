@@ -1,0 +1,41 @@
+﻿@model NETTEMPLATE.Models.Barang
+
+<h2>DELETE</h2>
+<h3>Are you sure?</h3>
+
+<table>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.IDBARANG)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayFor(model => model.IDBARANG)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.NAMABARANG)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayFor(model => model.NAMABARANG)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.HARGABARANG)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayFor(model => model.HARGABARANG)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.DESKRIPSI)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayFor(model => model.DESKRIPSI)</td>
+    </tr>
+</table>
+
+@using (Html.BeginForm()) { 
+    @Html.AntiForgeryToken()
+    
+    
+    <input type="submit" value="delete" /> 
+
+}
+
+@Html.ActionLink("Back to List", "Show", "Barang ")  
