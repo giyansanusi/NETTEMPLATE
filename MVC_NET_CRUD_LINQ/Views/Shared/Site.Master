@@ -61,19 +61,23 @@
     </script>
     <!-- //tables -->
 
+    <%-- Form Validation --%>
+        <script src="../../Assets/sanusi_custom/sanusiFormValidation.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../Assets/sanusi_custom/sanusiFormValidation.css" />
+    <%-- //Form Validation --%>
 
 </head>
 <body>
     <div>
 
-         <div class="page-container">
+<div class="page-container">
    <!--/content-inner-->
 <div class="left-content">
 	   <div class="mother-grid-inner">
              <!--header start here-->
 				<div class="header-main">
 					<div class="logo-w3-agile">
-								<h1><a href="index.html">Pooled</a></h1>
+								<h1><a href="index.html">SANUSI</a></h1>
 							</div>
 					<div class="w3layouts-left">
 							
@@ -253,19 +257,19 @@
 				     <div class="clearfix"> </div>	
 				</div>
 <!--heder end here-->
+
+
 		<ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
+                <li class="breadcrumb-item"><a href="index">Home</a> <i class="fa fa-angle-right"></i></li>
             </ol>
-
+           
            <%-- Main Content here --%>
-            <h3>Hallo, saya dari site master</h3>
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        
-            </asp:ContentPlaceHolder>
 
-            <asp:ContentPlaceHolder ID="ShowBarang" runat="server">
-        
-            </asp:ContentPlaceHolder>
+            
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+           
+
+            <asp:ContentPlaceHolder ID="ShowBarang" runat="server"></asp:ContentPlaceHolder>
 
            
 
@@ -290,11 +294,13 @@
 
 </div>
 <!--inner block end here-->
+
 <!--copy rights start here-->
 <div class="copyrights">
 	 <p>© 2016 Pooled. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 </div>	
 <!--COPY rights end here-->
+
 </div>
 </div>
   <!--//content-inner-->

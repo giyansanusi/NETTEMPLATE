@@ -50,6 +50,5 @@ E:\Projects\NETTEMPLATE\MVC_NET_CRUD_LINQ\bin\System.Web.Razor.xml
 E:\Projects\NETTEMPLATE\MVC_NET_CRUD_LINQ\bin\System.Web.WebPages.xml
 E:\Projects\NETTEMPLATE\MVC_NET_CRUD_LINQ\bin\System.Web.WebPages.Deployment.xml
 E:\Projects\NETTEMPLATE\MVC_NET_CRUD_LINQ\bin\System.Web.WebPages.Razor.xml
-E:\Projects\NETTEMPLATE\MVC_NET_CRUD_LINQ\obj\Debug\NETTEMPLATE.csprojResolveAssemblyReference.cache
 E:\Projects\NETTEMPLATE\MVC_NET_CRUD_LINQ\obj\Debug\MVC_NET_CRUD_LINQ.dll
 E:\Projects\NETTEMPLATE\MVC_NET_CRUD_LINQ\obj\Debug\MVC_NET_CRUD_LINQ.pdb

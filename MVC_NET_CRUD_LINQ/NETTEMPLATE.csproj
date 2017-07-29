@@ -184,6 +184,8 @@
     <Content Include="Assets\js\monthly.js" />
     <Content Include="Assets\js\morris.js" />
     <Content Include="Assets\js\raphael-min.js" />
+    <Content Include="Assets\sanusi_custom\sanusiFormValidation.css" />
+    <Content Include="Assets\sanusi_custom\sanusiFormValidation.js" />
     <Content Include="Assets\js\scripts.js" />
     <Content Include="Global.asax" />
     <Content Include="Views\Barang\Index.aspx" />

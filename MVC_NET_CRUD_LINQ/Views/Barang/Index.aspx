@@ -2,13 +2,20 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Index
+    SANUSI NETTEMPLATE
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="grid-form1">
+        <h2>SANUSI NETTEMPLATE</h2>
+        <h4>Choose Template Menu</h4>
+        <ol>
+            <li><a href="<%= Page.ResolveUrl("~/Barang/Show") %>">LINQ CRUD with Razor view engine</a></li>
+            <li><a href="<%= Page.ResolveUrl("~/Barang/IndexInAspx") %>">Form Validation using Jquery (TODO)</a></li>
+        </ol>
+    </div>
+    
 
-<h2>Index</h2>
-
-    Halo, saya dari index.
+    
 
 </asp:Content>
